@@ -1,0 +1,7 @@
+{
+  "unique_test_patients": 1000,
+  "chest_max_operator_response_difference": 0.0,
+  "bootstrap_replicates": 5000,
+  "primary_family_size": 6,
+  "patient_intervals_conditional_on_three_fitted_models": true
+}

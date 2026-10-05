@@ -1,0 +1,7 @@
+{
+  "status": "exploratory multiplicity diagnostic, added after reviewing descriptive extension outputs",
+  "family_size": 168,
+  "bootstrap_replicates": 5000,
+  "critical_standardized_max_deviation": 3.554020643234253,
+  "patient_SE_standardization": "observed SE, seeds averaged before bootstrap; conditional on fitted models"
+}

@@ -1,0 +1,6 @@
+{
+  "base": "https://physionet-open.s3.amazonaws.com/ptb-xl/1.0.3/",
+  "metadata_sha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b",
+  "statements_sha256": "ad05b0b1fcae83bb1230755ad9cfc7c96f303feddc08a4a9ad5bdc9ca63bac8f",
+  "manifest_sha256": "fff9207d93ca75c110441dac1e3d03e57a443dc953e776de57523b794c3922fa"
+}

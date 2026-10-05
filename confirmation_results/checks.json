@@ -1,0 +1,13 @@
+{
+  "original_cnn_17_max_relative_dose_error": 2.384185791015625e-07,
+  "original_cnn_29_max_relative_dose_error": 2.384185791015625e-07,
+  "original_cnn_43_max_relative_dose_error": 2.384185791015625e-07,
+  "residual_cnn_17_max_relative_dose_error": 2.384185791015625e-07,
+  "residual_cnn_29_max_relative_dose_error": 2.384185791015625e-07,
+  "residual_cnn_43_max_relative_dose_error": 2.384185791015625e-07,
+  "wrapper": {
+    "on_consistent_max_logit_difference": 4.874572967494828e-15,
+    "tangent_gradient_max_difference": 4.257474617297419e-08,
+    "fixed_mask_consistent_max_response_difference": 1.3322676295501878e-15
+  }
+}

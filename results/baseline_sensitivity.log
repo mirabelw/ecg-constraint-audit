@@ -1,0 +1,7 @@
+ seed task  mean_abs_probability_change  p95_abs_probability_change  max_abs_probability_change
+   17   MI                     0.000149                    0.000861                    0.003607
+   17   CD                     0.000126                    0.000831                    0.003062
+   29   MI                     0.000088                    0.000366                    0.000981
+   29   CD                     0.000122                    0.000429                    0.000885
+   43   MI                     0.000097                    0.000457                    0.001207
+   43   CD                     0.000082                    0.000416                    0.001119

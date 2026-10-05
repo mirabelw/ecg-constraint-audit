@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-05",
+  "status": "Frozen local exploratory extension after reviewing original outcomes and feedback; not a preregistration or independent replication cohort.",
+  "cohort": "Same fixed 4000/500/1000 patient splits; no exclusions or fresh test tuning.",
+  "seeds": [17,29,43],
+  "architectures": ["original_cnn", "residual_cnn"],
+  "second_architecture_training": {"epochs":20,"learning_rate":0.001,"weight_decay":0.0001,"validation_selection":"macro AUROC","validation_gate":0.75},
+  "methods": ["saliency","input_gradient","integrated_gradients","smoothgrad","tangent_saliency","tangent_input_gradient","tangent_integrated_gradients"],
+  "tangent_definition": "Project SIGNED gradient or signed path-average gradient before abs and, where appropriate, before input multiplication. Never project absolute or input-weighted maps directly.",
+  "smoothgrad": {"samples":8,"noise_sd_normalized_units":0.1,"noise":"projected Gaussian (measurement consistent)","seed":914},
+  "ig_steps":32,
+  "operators": ["independent_zero","energy_matched"],
+  "primary_extension_cell": {"stratum":"limb","budget":0.1,"replacement":"zero"},
+  "comparators": ["uniform_random","method_specific_amplitude_matched_random"],
+  "matched_comparator": "Without-replacement random lead-window matches among five nearest log-energy candidates to each selected cell, then exactly scale raw delta L2 to guided raw dose. Apply raw and projected energy-matched operators at the same guided dose. Supply matching error and pre-rescale amplitude/dose ratios.",
+  "geometry_mechanism": "Decompose raw delta into P delta and (I-P) delta. Measure normal energy fraction and evaluate P delta WITHOUT renormalization in the original three-method audit; do not infer model insensitivity from energy fraction alone.",
+  "secondary_replacement": "Within each selected 500-ms window replace by that lead-window's mean, original three methods plus tangent IG, uniform comparator; same raw/energy normalization; no target-matched estimand asserted.",
+  "positive_control": {
+    "base_model":"original CNN seed 17",
+    "wrapper":"logit_lambda(x) = logit_base(Px) + lambda * dot(w, (I-P)x); fixed unit normal template w supported on deterministic early-time limb windows",
+    "lambda_grid":[0,1,3,10,30],
+    "w_seed":872,
+    "methods":"Original saliency/input-gradient/IG, recomputed per wrapper; also original frozen masks evaluated for all wrappers to isolate evaluator from attribution changes.",
+    "validation_selection":"Freeze a lambda based only on validation: first grid level reversing a non-tied method pair under independent evaluation relative to lambda 0. If none succeeds report control failure; no expansion based on test.",
+    "guarantees":"On-subspace logits identical mathematically; feasible perturbation responses for FIXED masks invariant. Recomputed unprojected attribution masks need not be invariant even with a feasible evaluator; report them separately.",
+    "tolerances":{"logit_invariance":0.00001,"fixed_mask_consistent_response_invariance":0.00001}
+  },
+  "statistics":"Paired patient bootstrap with seeds averaged within each architecture; original six absolute intervals retained historically. Relative original ratios use ratio of cohort mean advantages, paired resampling numerator and denominator. Extension intervals descriptive 95%, no confirmatory equivalence declaration and no architecture/seed population generalization.",
+  "ranking_focus":"Explicit input-gradient vs IG and tangent-IG comparisons, margins/intervals, unresolved order; do not count saliency separation as evidence of power for near ties.",
+  "limitations_to_retain":["single dataset", "projected training inputs", "two CNN architectures do not cover all model families", "same reused test cohort", "limited replacement baselines"]
+}

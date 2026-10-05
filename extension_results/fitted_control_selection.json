@@ -1,0 +1,7 @@
+{
+  "validation_selected_lambda": 1,
+  "validation_base_saliency_minus_IG": -0.014091413516050776,
+  "validation_new_gap": 0.0005073992516645282,
+  "fitted_direction_only_used_validation": true,
+  "selection_failure": false
+}

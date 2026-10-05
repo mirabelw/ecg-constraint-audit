@@ -1,0 +1,6 @@
+{
+  "exact_matched_L2_dose": "pass",
+  "consistent_energy_operator": "pass",
+  "matched_mask_cell_budget": "pass",
+  "orthogonal_energy_fraction_bounds": "pass"
+}

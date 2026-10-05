@@ -1,0 +1,40 @@
+{
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "tasks": [
+    "MI",
+    "CD"
+  ],
+  "methods": [
+    "saliency",
+    "input_gradient",
+    "integrated_gradients",
+    "random"
+  ],
+  "strata": [
+    "limb",
+    "chest",
+    "all"
+  ],
+  "budgets": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "operators": [
+    "independent_zero",
+    "target_matched",
+    "energy_matched"
+  ],
+  "per_seed_array_dimensions": [
+    "task",
+    "method",
+    "stratum",
+    "budget",
+    "operator",
+    "patient"
+  ]
+}

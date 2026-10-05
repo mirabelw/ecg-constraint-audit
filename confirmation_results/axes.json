@@ -1,0 +1,47 @@
+{
+  "methods": [
+    "saliency",
+    "input_gradient",
+    "integrated_gradients"
+  ],
+  "kinds": [
+    "guided",
+    "uniform_random",
+    "amplitude_matched_random",
+    "time_shift_dose_matched",
+    "time_shift_natural"
+  ],
+  "operators": [
+    "independent",
+    "energy_matched",
+    "projected_unscaled"
+  ],
+  "tasks": [
+    "MI",
+    "CD"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "response_dimensions": [
+    "task",
+    "method",
+    "kind",
+    "operator",
+    "patient"
+  ],
+  "shift_response_dimensions": [
+    "task",
+    "method",
+    "shift",
+    "dose_policy",
+    "operator",
+    "patient"
+  ],
+  "dose_policy": [
+    "matched",
+    "natural"
+  ]
+}

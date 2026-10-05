@@ -1,0 +1,15 @@
+# Downloaded public dataset (fetched automatically by the scripts)
+data_cache/
+confirmation_cache/
+metadata_cache/
+*.dat
+*.hea
+*.zip
+
+# Python and editor clutter
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/

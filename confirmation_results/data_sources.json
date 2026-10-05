@@ -1,0 +1,9 @@
+{
+  "eligible_patient_count": 11021,
+  "excluded_patient_count": 5502,
+  "overlap_with_previous_manifest": 0,
+  "protocol_sha256": "d81696c15ee0bce781fbb78ecf8267ee13d27e1a43094faa013bdae8a42fe1f3",
+  "manifest_sha256": "809a42680c65ae2d8cd2022346c10d5e155077af27450d57ccc7ff218cd64fa1",
+  "metadata_sha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b",
+  "base": "https://physionet-open.s3.amazonaws.com/ptb-xl/1.0.3/"
+}

@@ -1,0 +1,14 @@
+task               method       operator  delta_advantage    ci_low   ci_high  interval_coverage  equivalence_margin    conclusion  equivalent_margin_0.005  equivalent_margin_0.02
+  MI             saliency target_matched        -0.024648 -0.028656 -0.020843           0.950000                0.01 beyond_margin                    False                   False
+  MI             saliency energy_matched        -0.006878 -0.009232 -0.004538           0.991667                0.01    equivalent                    False                    True
+  MI       input_gradient target_matched        -0.009841 -0.014432 -0.005470           0.950000                0.01  inconclusive                    False                    True
+  MI       input_gradient energy_matched        -0.002696 -0.005508  0.000163           0.991667                0.01    equivalent                    False                    True
+  MI integrated_gradients target_matched        -0.011907 -0.016131 -0.007847           0.950000                0.01  inconclusive                    False                    True
+  MI integrated_gradients energy_matched        -0.004314 -0.006793 -0.001905           0.991667                0.01    equivalent                    False                    True
+  CD             saliency target_matched        -0.016939 -0.020176 -0.013777           0.950000                0.01 beyond_margin                    False                   False
+  CD             saliency energy_matched        -0.005762 -0.007733 -0.003918           0.991667                0.01    equivalent                    False                    True
+  CD       input_gradient target_matched        -0.013310 -0.016868 -0.009845           0.950000                0.01  inconclusive                    False                    True
+  CD       input_gradient energy_matched        -0.003857 -0.006083 -0.001708           0.991667                0.01    equivalent                    False                    True
+  CD integrated_gradients target_matched        -0.016340 -0.019881 -0.012864           0.950000                0.01 beyond_margin                    False                    True
+  CD integrated_gradients energy_matched        -0.004376 -0.006830 -0.002153           0.991667                0.01    equivalent                    False                    True
+chest identity 0.0

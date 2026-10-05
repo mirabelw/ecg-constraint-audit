@@ -1,0 +1,16 @@
+{
+  "validation_checks": {
+    "on_consistent_max_logit_difference": 2.4868995751603507e-14,
+    "tangent_gradient_max_difference": 4.257474617297419e-08,
+    "fixed_mask_consistent_max_response_difference": 3.4416913763379853e-15
+  },
+  "test_checks": {
+    "on_consistent_max_logit_difference": 1.199040866595169e-14,
+    "tangent_gradient_max_difference": 4.399390451936824e-08,
+    "fixed_mask_consistent_max_response_difference": 2.7755575615628914e-15
+  },
+  "validation_selected": {
+    "selection": "control failed to find a validation reversal in frozen lambda grid"
+  },
+  "control_found_validation_reversal": false
+}

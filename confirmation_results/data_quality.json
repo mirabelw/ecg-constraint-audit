@@ -1,0 +1,11 @@
+{
+  "n": 1000,
+  "label_counts": {
+    "MI": 238,
+    "CD": 215
+  },
+  "human_validated_fraction": 0.699,
+  "global_train_rms_mv": 0.22943271696567535,
+  "raw_projection_rms_mv": 0.0008460856624878943,
+  "no_patient_overlap": true
+}

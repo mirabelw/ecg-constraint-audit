@@ -1,0 +1,16 @@
+{
+  "threshold_mv": 0.01,
+  "threshold_purpose": "posthoc recording-quality sensitivity, not patient exclusion from primary analysis",
+  "n_over_threshold_by_split": {
+    "test": 1,
+    "train": 9,
+    "validation": 1
+  },
+  "projection_peak_quantiles_mv": {
+    "0.5": 0.0008571743965148926,
+    "0.95": 0.0011428594589233398,
+    "0.99": 0.0011428594589233398,
+    "0.999": 0.041496746242046356,
+    "1": 2.5861904621124268
+  }
+}

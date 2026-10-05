@@ -1,0 +1,7 @@
+{
+  "analysis_status": "Posthoc verification reanalysis of the fixed random-template grid, after fixed-mask controls failed; original grid and failures retained. Choice computed from validation only, but test grid had already been examined. Not an independent validation.",
+  "mask_policy": "recomputed",
+  "pair": "MI saliency minus IG",
+  "minimum_validation_new_gap": 0.005,
+  "chosen_lambda": 10
+}

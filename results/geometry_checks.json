@@ -1,0 +1,7 @@
+{
+  "all_64_limb_masks": "pass",
+  "selected_zero": "pass",
+  "energy_dose": "pass",
+  "chest_identity": "pass",
+  "residual_only_positive_control": "pass"
+}

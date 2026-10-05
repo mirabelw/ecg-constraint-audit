@@ -1,0 +1,12 @@
+{
+  "protocol_sha256": "d81696c15ee0bce781fbb78ecf8267ee13d27e1a43094faa013bdae8a42fe1f3",
+  "model_sha256": {
+    "residual_seed_17.pt": "a61916d9ec90b08e10317ccc111bbbfa53e22b0f7bc4af504353fb3c6e3f9955",
+    "seed_29.pt": "3b88170b3733760162784e1c99b0c70c72fdc7747baf9be9d9f58846bcba3468",
+    "seed_43.pt": "83a4e80a2b38a4f5077c11b57192cf76be2c6ce68200f1e84b6f0d2647d67d4d",
+    "residual_seed_43.pt": "8de87cb373e3b32cb6df1eb6029104f8c8c5d71fbdd354464de9ce7bf161aa1e",
+    "residual_seed_29.pt": "1ac01f3b6d38ffe1726dbade2a82f2b3782318249fc750e90316c4d4166e4c87",
+    "seed_17.pt": "167789446e80c01c4b090b2cafba0834ddb2a0cb93b7865a15b0fda5c2108668"
+  },
+  "implementation_sha256": "b4aa912c231dbc890a75c221abd419aecd7b04a2141ea2bd935dbfcb91be62d4"
+}

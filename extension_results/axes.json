@@ -1,0 +1,47 @@
+{
+  "methods": [
+    "saliency",
+    "input_gradient",
+    "integrated_gradients",
+    "smoothgrad",
+    "tangent_saliency",
+    "tangent_input_gradient",
+    "tangent_integrated_gradients"
+  ],
+  "kinds": [
+    "guided",
+    "uniform_random",
+    "amplitude_matched_random"
+  ],
+  "operators": [
+    "independent",
+    "energy_matched",
+    "projected_unscaled"
+  ],
+  "tasks": [
+    "MI",
+    "CD"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "primary_dimensions": [
+    "task",
+    "method",
+    "kind",
+    "operator",
+    "patient"
+  ],
+  "secondary_mean_methods": [
+    "saliency",
+    "input_gradient",
+    "integrated_gradients",
+    "tangent_integrated_gradients"
+  ],
+  "secondary_mean_kinds": [
+    "guided",
+    "uniform_random"
+  ]
+}

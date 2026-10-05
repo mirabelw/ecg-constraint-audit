@@ -1,0 +1,8 @@
+{
+  "status":"Exploratory control-construction amendment after the fixed random template failed validation; no test result used to choose this fitted template.",
+  "base":"original CNN seed 17 composed with P",
+  "objective":"Maximize validation MI absolute probability-response gap between frozen saliency and frozen IG masks, using only a linear normal-direction extension of the logit.",
+  "optimization":{"steps":200,"optimizer":"Adam","learning_rate":0.05,"normal_vector_norm_limit":30,"initial_seed":872,"record_every":10},
+  "selection":"Use the final fitted direction; choose first lambda in [1,3,10,30] reversing validation saliency vs IG point order with baseline gap >0.001. If none, record failure; no test tuning.",
+  "scope":"Deliberately engineered verification control; not a realistic attack, generalization claim, new method, or evidence that an ordinary trained model is vulnerable to this exact construction."
+}

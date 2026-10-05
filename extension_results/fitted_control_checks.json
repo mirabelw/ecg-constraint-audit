@@ -1,0 +1,34 @@
+{
+  "selection": {
+    "validation_selected_lambda": 1,
+    "validation_base_saliency_minus_IG": -0.014091413516050776,
+    "validation_new_gap": 0.0005073992516645282,
+    "fitted_direction_only_used_validation": true,
+    "selection_failure": false
+  },
+  "validation_checks": {
+    "on_consistent_max_logit_difference": 2.3092638912203256e-14,
+    "tangent_gradient_max_difference": 4.257474639501879e-08,
+    "fixed_mask_consistent_max_response_difference": 1.887379141862766e-15
+  },
+  "test_checks": {
+    "on_consistent_max_logit_difference": 1.7763568394002505e-14,
+    "tangent_gradient_max_difference": 4.399390451936824e-08,
+    "fixed_mask_consistent_max_response_difference": 2.3314683517128287e-15
+  },
+  "raw_old": {
+    "gap": -0.01363210595231588,
+    "ci95": [
+      -0.020930442950091378,
+      -0.006296057952372903
+    ]
+  },
+  "raw_new": {
+    "gap": -0.013113075605183403,
+    "ci95": [
+      -0.020653390676833562,
+      -0.005622659147390041
+    ]
+  },
+  "test_fixed_mask_point_reversal": false
+}

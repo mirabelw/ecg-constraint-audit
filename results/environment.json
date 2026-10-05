@@ -1,0 +1,8 @@
+{
+  "torch": "2.14.1+cpu",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "threads": 4,
+  "device": "cpu",
+  "protocol_sha256": "6e1bcf82e139e80e5fa448596c07d4ce49ef59a4ae2007c7f56f6ab9ec6fb5e3"
+}

@@ -1,0 +1,22 @@
+{
+  "raw_projection_rms_mv": 0.0013025656808167696,
+  "raw_projection_max_mv": 2.5861904621124268,
+  "one_record_per_patient": true,
+  "n_by_split": {
+    "test": 1000,
+    "train": 4000,
+    "validation": 500
+  },
+  "label_counts": {
+    "MI": {
+      "test": 254,
+      "train": 970,
+      "validation": 118
+    },
+    "CD": {
+      "test": 211,
+      "train": 871,
+      "validation": 108
+    }
+  }
+}
