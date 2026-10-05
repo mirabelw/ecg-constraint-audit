@@ -48,6 +48,7 @@ first if you want to compare against the supplied run.
 | Development extension: residual CNN, seven attribution variants, amplitude-matched comparator, off-subspace energy, mean replacement, development controls (including failed ones) | `python run_extension.py --cache ../data_cache` | `extension_results/`, `checkpoints/residual_seed_*.pt` |
 | Confirmation cohort: Fig. 2, Tables I–III, Sections III-B to III-D | `python run_confirmation.py` | `confirmation_results/` |
 | Independent check of the confirmation numbers and cohort separation | `python verify_confirmation.py` | `confirmation_results/verification.json` |
+| Statistical resolution of method orderings (Section III-B) | `python ranking_resolution.py` | `confirmation_results/ranking_resolution.csv` |
 | Fig. 1 (illustrative masks) and Fig. 2 | `python make_paper_figures.py` | `paper_figures/` |
 
 `run_confirmation.py` uses the six supplied model states, so it can be run
@@ -80,6 +81,8 @@ step.
 - `evaluate_confirmation.py`, `summarize_confirmation.py`,
   `verify_confirmation.py`: frozen confirmation with time-shift comparators,
   geometry diagnostics, wrapper confirmation and an independent audit.
+- `ranking_resolution.py`: descriptive patient-bootstrap intervals for the pairwise method
+  orderings on the confirmation cohort.
 - `protocol.json`, `extension_protocol.json`,
   `control_construction_protocol.json`, `confirmation_protocol.json`: locally
   frozen analysis plans, recorded by hash in the corresponding results.
