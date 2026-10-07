@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "status": "Frozen local exploratory extension after reviewing original outcomes and feedback; not a preregistration or independent replication cohort.",
+  "status": "Frozen local exploratory extension, defined after inspecting the original outcomes; not a preregistration or independent replication cohort.",
   "cohort": "Same fixed 4000/500/1000 patient splits; no exclusions or fresh test tuning.",
   "seeds": [17,29,43],
   "architectures": ["original_cnn", "residual_cnn"],

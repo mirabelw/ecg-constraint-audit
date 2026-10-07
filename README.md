@@ -72,7 +72,7 @@ step.
 - `check_ig.py`, `baseline_sensitivity.py`: integrated-gradients convergence
   and data-quality sensitivity checks (validation only / disclosed).
 - `extension_methods.py`, `evaluate_extension.py`, `summarize_extension.py`,
-  `recheck_feedback.py`: extension variants (SmoothGrad, tangent-projected
+  `original_relative_analysis.py`: extension variants (SmoothGrad, tangent-projected
   attributions), amplitude/dose-matched comparator, relative-effect
   decomposition and the 18-cell ordering re-check.
 - `positive_control.py`, `fitted_positive_control.py`,
