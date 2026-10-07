@@ -49,6 +49,7 @@ first if you want to compare against the supplied run.
 | Confirmation cohort: Fig. 2, Tables I–III, Sections III-B to III-D | `python run_confirmation.py` | `confirmation_results/` |
 | Independent check of the confirmation numbers and cohort separation | `python verify_confirmation.py` | `confirmation_results/verification.json` |
 | Statistical resolution of method orderings (Section III-B) | `python ranking_resolution.py` | `confirmation_results/ranking_resolution.csv` |
+| Supplementary descriptive analyses from saved outputs: patient-level geometry link, mask structure, development budget and projected-gradient summaries (Section III-D, supplement) | `python supplementary_analyses.py` | `confirmation_results/patient_level_geometry_effect.csv`, `confirmation_results/comparator_level_geometry_effect.csv`, `confirmation_results/mask_structure.csv`, `results/budget_sensitivity.csv`, `extension_results/projected_gradient_comparison.csv` |
 | Fig. 1 (illustrative masks) and Fig. 2 | `python make_paper_figures.py` | `paper_figures/` |
 
 `run_confirmation.py` uses the six supplied model states, so it can be run
@@ -83,6 +84,9 @@ step.
   geometry diagnostics, wrapper confirmation and an independent audit.
 - `ranking_resolution.py`: descriptive patient-bootstrap intervals for the pairwise method
   orderings on the confirmation cohort.
+- `supplementary_analyses.py`: descriptive analyses computed from saved outputs only
+  (patient-level geometry link, guided-mask structure, development budget and
+  projected-gradient summaries); needs no waveforms or models.
 - `protocol.json`, `extension_protocol.json`,
   `control_construction_protocol.json`, `confirmation_protocol.json`: locally
   frozen analysis plans, recorded by hash in the corresponding results.
